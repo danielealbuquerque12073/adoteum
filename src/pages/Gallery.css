@@ -1,0 +1,88 @@
+div.container{
+ width: 90vw;
+ height: auto; 
+
+}
+div.grid-container {
+  display: grid;
+  margin: 18px auto auto;
+  grid-template-columns: repeat(3, 1fr);
+  height: 900px;
+  width: auto ;
+
+  border: 1px solid black;
+}
+
+h2.titulo-galeria {
+  font-size: medium 20px;
+  color: #b36136;
+}
+p.descricao-galeria {
+  font-size: 18px;
+  color: rgb(9, 65, 62);
+}
+
+div.grid-iten {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  height: auto;
+  box-shadow: 20px 20px 20px #00000029;
+  text-decoration: none;
+  margin-top: 50px; 
+  border-radius: 0px 40px 20px;
+
+}
+
+div.grid-iten img {
+  /*border: 1px solid black; tirei a borda */ 
+  width: 300px;
+  height: 250px;
+  position: relative;
+}
+
+div.legenda {
+  text-align: center;
+  color: rgb(9, 65, 62);
+}
+
+.zoom {
+  overflow: hidden;
+}
+
+.zoom img {
+  max-width: 300px;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.zoom:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* botão da página de galeria*/
+.button-galeria{
+  text-align: center;
+  border:1px solid;
+  padding: 5px 10px;
+  background:#b36136;
+  color:white;
+  border-radius:6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 1s;
+  height: 50px;
+  align-self: center;
+
+}
+
+
+
+img {
+  clip-path: polygon(0% 0%, 120% 0%, 150% 20%, 100% 100%, 0% 90%, 0% 30%);
+
+}
